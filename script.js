@@ -36,7 +36,7 @@ function randomSelect() {
     setTimeout(() => unHighlightTag(randomTag), 100);
   }, 100);
 
-  // Se encarga de detenerlo y elegira una etiqueta aleatoria para resaltar
+
   setTimeout(() => {
     clearInterval(intervalo);
 
@@ -61,13 +61,4 @@ function unHighlightTag(tag) {
   tag.classList.remove('highlight');
 }
 
-/*
-textarea.focus();
-textarea.addEventListener('keydown', function (e) {
-  const text = e.target.value;
 
-  if (e.key === 'Enter' || text.endsWith(',')) {
-    tags.insertAdjacentHTML('beforeend', `<span class="tag">${text}</span>`);
-  }
-});
-*/
